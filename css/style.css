@@ -1,0 +1,251 @@
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: #999;
+}
+nav .contaner{
+    width: 1200px;
+    height: 75px;
+    display: flex;
+    margin-inline: auto;
+    align-items: center;
+    gap: 25px;
+}
+.nav-manu:last-of-type{
+    margin-left: auto;
+}
+.nav-manu{
+    display: flex;
+    gap: 21px;
+} 
+.nac-link{
+    font-weight: bold;
+    transition: 600ms;
+    position: relative;
+}
+
+.nac-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #373add;
+    bottom: -20px;
+    left: 0;
+    transform: scaleX(0);/*縮放到0*/
+    transition: 600ms;
+    transform-origin:center ;/*從中間變化*/
+    opacity: 0;/*透民度0*/
+}
+/* .nav-manu:last-of-type .nac-link::after{
+    transform: scaleX(0);
+} */
+.nac-link:hover{
+    color: #dac6c6;
+    
+}
+.nav-manu:first-of-type .nac-link:hover:after{
+    transform: scaleX(1);/*縮放1*/
+    opacity: 1;/*透民度1*/
+}
+
+header{
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* height: 450px; */
+    /* background-color: #ccc; */
+    max-height: 600px;
+    min-height: 400px;
+}
+header img{
+    height: 100%;
+    object-fit: cover;
+}
+.soft{
+    background-color: #ce5252;
+    padding: 10px;
+}
+.soft-contaner{
+    width: 800px;
+    margin-inline:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.soft-item{
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.soft-item :nth-last-of-type(1){
+    /* background-color: #fff; */
+}
+#product h2{
+    /* align-items: center; */
+    text-align: center;
+    margin-top: 10px;
+}
+.contaner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:  5px;
+    /* padding-inline: 15px; */
+    
+}
+.product-item{
+    flex:0 0 calc(100% / 3);
+    padding: 15px;
+    text-align: center;
+}
+.product-item:hover{
+    background-color: #63b6e6;
+}
+.product-item-h3{
+    margin: 10px;
+}
+.aiot h2{
+    text-align: center;
+    padding: 15px;
+}
+.aiot{
+    background-color: #dd8484;
+}
+.aiot-left{
+    flex: 0 0 calc(100%/4) ;
+}
+.aiot-right{
+    flex: 0 0 75% ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aiot-right-col{
+    flex: 0 0 calc(100%/3);
+    padding: 5px;
+}
+.aiot-title{
+    background-color: #d82121;
+    padding: 10px;
+    /* margin-top: auto; */
+}
+.aiot-title h3{
+    margin-bottom: 5px;
+}
+.aiot-itom{
+    display: flex;
+    flex-direction: column; /*方向 直*/
+    /* background-color: #44bad8; */
+    height: 100%;/*itom 高度填滿*/
+    text-align: center;
+    overflow: hidden;
+    
+}
+.aiot-itom img{
+    transition: 1s;
+}
+.aiot-itom:hover img{
+    transform: scale(1.3);
+}
+.aiot-cover{
+    height: 100%;/*使圖片跟著填滿*/
+}
+.aiot-cover img{
+    height: 100%;/*使圖片跟著填滿*/
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.other{
+    padding: 30px;
+    
+}
+.other-contaner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+}
+.other-itom{
+    flex:  0 0 25%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.info-bottom-contaner{
+    flex: 0 0 50%;
+    padding: 5px;
+}
+.info-cover{
+    position: relative;
+    aspect-ratio: 32/9;
+}
+.info-cover img{
+    
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 1s;
+}
+.info-itom{
+    position: absolute;
+    background-color: rgb(255 255 255 /.5);
+    /* background-color: rgba(255,255 ,255  .5 ); */
+    width: 100%;
+    bottom: 0;
+    padding: 5px;
+    transition: 300ms;
+}
+.info-cover:hover img{
+    transform: scale(1.05);
+}
+.info-cover:hover .info-itom{
+    background-color: rgb(0 0 0/.5);
+    color: #fff;
+} 
+footer {
+    border-top: 2px solid red;
+    padding-top: 30px;
+}
+.footer-itom {
+    flex: 0 0 20%;
+    
+}
+.footer-itom h3 {
+    margin-bottom: 20px;
+}
+.footer-itom li {
+    list-style:none;
+    /* margin-bottom: 15px; */
+    line-height: 32px;
+}
+.copyright-item {
+    flex:0 0 50%;
+    padding-block:15px;
+}
+.copyright-item:last-of-type {
+    text-align: right;
+}
+
+footer hr {
+    width: 100%;
+    margin-block: 20px;
+}
+
+
+.tri{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #9b8c8c;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(0 0,100% 100%,0 100%);
+}
+.swiper {
+    width: 100%;
+    height: 600px;
+}
