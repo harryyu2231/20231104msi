@@ -62,7 +62,7 @@ header img{
     object-fit: cover;
 }
 .soft{
-    background-color: #ce5252;
+    background-color: #5f5656;
     padding: 10px;
 }
 .soft-contaner{
@@ -110,7 +110,7 @@ header img{
     padding: 15px;
 }
 .aiot{
-    background-color: #dd8484;
+    background-color: #f5f1f1;
 }
 .aiot-left{
     flex: 0 0 calc(100%/4) ;
@@ -125,7 +125,7 @@ header img{
     padding: 5px;
 }
 .aiot-title{
-    background-color: #d82121;
+    background-color: #e7a5a5;
     padding: 10px;
     /* margin-top: auto; */
 }
@@ -207,7 +207,7 @@ header img{
     color: #fff;
 } 
 footer {
-    border-top: 2px solid red;
+    border-top: 2px solid rgb(3, 1, 1);
     padding-top: 30px;
 }
 .footer-itom {
